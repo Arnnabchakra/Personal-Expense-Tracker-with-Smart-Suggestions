@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+  min-height: 72px;
+  padding: 16px 48px;
+  background: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #a78bfa;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-links a,
+.nav-links button {
+  text-decoration: none;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e5e7eb;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+/* Auth Pages */
+.auth-container {
+  min-height: calc(100vh - 72px);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 430px;
+  background: #111827;
+  padding: 36px;
+  border-radius: 22px;
+  border: 1px solid #334155;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+.auth-form h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border: 1px solid #475569;
+  border-radius: 12px;
+  outline: none;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+.auth-form input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.auth-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 18px;
+  color: #cbd5e1;
+}
+
+.auth-form a {
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Main Pages */
+.dashboard-page,
+.transactions-page {
+  padding: 36px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #111827;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.28);
+  margin-bottom: 24px;
+}
+
+/* Dashboard */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.dashboard-header h1 {
+  font-size: 34px;
+  color: #f8fafc;
+}
+
+.dashboard-header p {
+  color: #cbd5e1;
+  margin-top: 8px;
+}
+
+.profile-box {
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #111827;
+  padding: 12px 18px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.profile-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  min-height: 140px;
+  border-left: 5px solid #38bdf8;
+}
+
+.summary-card h3 {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+}
+
+.summary-card p {
+  font-size: 30px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+/* Buttons */
+.dashboard-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.dashboard-actions button,
+.transaction-form button,
+.transaction-table button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #0f172a;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.dashboard-actions button:hover,
+.transaction-form button:hover,
+.transaction-table button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(56, 189, 248, 0.25);
+}
+
+/* Transaction Form */
+.transaction-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.transaction-form h3 {
+  grid-column: 1 / -1;
+  font-size: 24px;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #475569;
+  border-radius: 12px;
+  outline: none;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.transaction-form button {
+  grid-column: 1 / -1;
+}
+
+/* Transaction Table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.transaction-table th {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 14px;
+  border-bottom: 1px solid #334155;
+  text-align: left;
+}
+
+.transaction-table tbody tr:hover {
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.suggestion-box h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.suggestion-box ul {
+  padding-left: 22px;
+  line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .dashboard-page,
+  .transactions-page {
+    padding: 24px 18px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transaction-form {
+    grid-template-columns: 1fr;
+  }
+
+  .transaction-table {
+    font-size: 13px;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 10px;
+  }
+}
