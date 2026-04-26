@@ -155,7 +155,7 @@ http://localhost:5173
 
 ---
 
-## 💼 Project Explanation (Interview Ready)
+## 💼 Project Explanation
 
 > I built a full-stack Personal Expense Tracker using React, FastAPI, and PostgreSQL. The application allows users to securely sign up and log in using JWT authentication, manage income and expenses, and view a real-time dashboard with total income, expense, and balance. I also implemented a rule-based suggestion system that provides spending insights based on transaction history. FastAPI was used for efficient backend API development with Swagger documentation, and PostgreSQL ensures structured and reliable data storage.
 
@@ -175,19 +175,22 @@ http://localhost:5173
 ## Screenshots
 
 ### Signup Page
-<img src="Login Page.png" alt="Login Page" width="800"/>
+<img src="Signup page.png" alt="Signup Page" width="800"/>
+
+### Login Page
+<img src="Login page.png" alt="Login Page" width="800"/>
 
 ### Dashboard
 <img src="Dashboard.png" alt="Dashboard" width="800"/>
 
-### Client Management
-<img src="Client Management.png" alt="Client Management" width="800"/>
+### Transactions
+<img src="Transactions .png" alt="Transactions" width="800"/>
 
-### Project Management
-<img src="Project Management.png" alt="Project Management" width="800"/>
+### View Transactions
+<img src="View Transactions.png" alt="View Transactions" width="800"/>
 
-### Task Management
-<img src="Task Management.png" alt="Task Management" width="800"/>
+### AI Suggestion
+<img src="AI Suggestion.png" alt="AI Suggestion" width="800"/>
 
 ---
 
